@@ -25,20 +25,23 @@
 
 <body>
 
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
     <!-- =========================================================
          NAVIGATION
     ========================================================== -->
 
     <header class="site-header">
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
 
-            <a href="index.html" class="brand">
+            <a href="index.html" class="brand" aria-label="PROJECT Noahh home">
                 <span class="brand-mark">N</span>
                 <span class="brand-name">PROJECT NOAHH</span>
             </a>
 
-            <div class="nav-links">
+            <div class="nav-links" id="site-nav">
 
                 <a href="index.html" class="active">
                     Home
@@ -65,6 +68,23 @@
                 </a>
 
             </div>
+
+            <a href="index.html#contact" class="nav-button">
+                Start a Project
+                <span>↗</span>
+            </a>
+
+            <button
+                class="mobile-menu"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="site-nav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
         </nav>
 
@@ -1256,45 +1276,6 @@
 
         </section>
 
-        <!-- ==========================================
-             CONTACT
-        =========================================== -->
-
-        <section
-            class="contact"
-            id="contact"
-        >
-
-            <div class="contact-glow"></div>
-
-
-            <p class="section-kicker">
-                HAVE AN IDEA?
-            </p>
-
-
-            <h2>
-
-                LET'S BUILD
-                <span>WHAT'S NEXT.</span>
-
-            </h2>
-
-
-            <a
-                href="mailto:projectnoahh.md@gmail.com"
-                class="contact-button"
-            >
-
-                projectnoahh.md@gmail.com
-
-                <span>
-                    ↗
-                </span>
-
-            </a>
-
-        </section>
     </main>
 
 
