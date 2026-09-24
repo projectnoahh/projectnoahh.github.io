@@ -1,0 +1,1268 @@
+/* =========================================================
+   PROJECT NOAHH
+   ABOUT PAGE
+========================================================= */
+
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-hero {
+
+    min-height: calc(100vh - 86px);
+
+    padding: 80px 6vw;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.about-hero-content {
+
+    max-width: 760px;
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+.about-hero h1 {
+
+    font-size: clamp(60px, 8vw, 120px);
+
+    line-height: 0.84;
+
+    letter-spacing: -7px;
+
+    font-weight: 800;
+
+}
+
+
+.about-hero h1 span {
+
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--green);
+
+}
+
+
+.about-hero-description {
+    max-width: 850px;
+    margin-top: 55px;
+    padding-top: 35px;
+    border-top: 1px solid var(--border);
+
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: left;
+}
+
+/* =========================================================
+   HERO TECH VISUAL
+========================================================= */
+
+.about-hero-visual {
+
+    height: 620px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.hero-core {
+
+    width: 230px;
+
+    height: 230px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 5;
+
+    border: 1px solid rgba(53,255,138,0.5);
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(53,255,138,0.13),
+            rgba(5,7,6,0.97) 65%
+        );
+
+    box-shadow:
+
+        0 0 60px rgba(53,255,138,0.08),
+
+        inset 0 0 60px rgba(53,255,138,0.05);
+
+    animation:
+        coreFloat 5s ease-in-out infinite;
+
+}
+
+
+.hero-core strong {
+
+    font-size: 90px;
+
+    line-height: 0.9;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--green);
+
+}
+
+
+.hero-core span,
+.hero-core small {
+
+    font-family: "DM Mono", monospace;
+
+    color: var(--gray);
+
+    letter-spacing: 2px;
+
+}
+
+
+.hero-core span {
+
+    font-size: 8px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.hero-core small {
+
+    font-size: 7px;
+
+    margin-top: 12px;
+
+}
+
+
+@keyframes coreFloat {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+}
+
+
+/* =========================================================
+   HERO ORBITS
+========================================================= */
+
+.hero-orbit {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(53,255,138,0.12);
+
+}
+
+
+.about-hero-visual .orbit-a {
+
+    width: 310px;
+
+    height: 310px;
+
+}
+
+
+.about-hero-visual .orbit-b {
+
+    width: 470px;
+
+    height: 470px;
+
+}
+
+
+.about-hero-visual .orbit-c {
+
+    width: 650px;
+
+    height: 650px;
+
+}
+
+
+/* =========================================================
+   HERO DATA
+========================================================= */
+
+.hero-data {
+
+    position: absolute;
+
+    padding: 10px 14px;
+
+    border: 1px solid var(--border);
+
+    background: rgba(5,7,6,0.82);
+
+    backdrop-filter: blur(12px);
+
+    color: var(--green);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    z-index: 6;
+
+}
+
+
+.data-one {
+
+    top: 15%;
+
+    left: 2%;
+
+}
+
+
+.data-two {
+
+    top: 28%;
+
+    right: 0;
+
+}
+
+
+.data-three {
+
+    bottom: 18%;
+
+    left: 10%;
+
+}
+
+
+/* =========================================================
+   HERO CONNECTIONS
+========================================================= */
+
+.hero-line {
+
+    position: absolute;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--green),
+            transparent
+        );
+
+    opacity: 0.3;
+
+}
+
+
+.line-one {
+
+    width: 260px;
+
+    transform: rotate(25deg);
+
+}
+
+
+.line-two {
+
+    width: 210px;
+
+    transform: rotate(-35deg);
+
+}
+
+
+.line-three {
+
+    width: 180px;
+
+    transform: rotate(75deg);
+
+}
+
+
+/* =========================================================
+   SECTION INDEX
+========================================================= */
+
+.about-index {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.about-index span {
+
+    color: var(--green);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 11px;
+
+}
+
+
+.about-index div {
+
+    width: 30px;
+
+    height: 1px;
+
+    background: var(--green);
+
+}
+
+
+.about-index small {
+
+    color: var(--gray);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    writing-mode: vertical-rl;
+
+}
+
+
+/* =========================================================
+   FOUNDERS
+========================================================= */
+
+.founders-section {
+
+    padding: 150px 6vw;
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 70px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.founders-content {
+
+    max-width: 1100px;
+
+}
+
+
+.founders-content h2 {
+
+    max-width: 900px;
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 0.88;
+
+    letter-spacing: -6px;
+
+}
+
+
+.founders-content h2 span {
+
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--green);
+
+}
+
+
+.founders-intro {
+
+    max-width: 650px;
+
+    margin-top: 35px;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   FOUNDERS
+========================================================= */
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 70px auto 0;
+}
+
+.founder-card {
+    position: relative;
+    padding: 45px 60px 55px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.founder-card:first-child {
+    border-right: 1px solid var(--border);
+}
+
+.founder-card:hover {
+    background: transparent;
+}
+
+.founder-number {
+    margin-bottom: 28px;
+    color: var(--green);
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+}
+
+.founder-avatar {
+    display: none;
+}
+
+.founder-info {
+    margin-top: 0;
+}
+
+.founder-info h3 {
+    margin: 0 0 8px;
+    color: var(--white);
+    font-size: clamp(36px, 4vw, 56px);
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+.founder-role {
+    margin: 0 0 28px;
+    color: var(--green);
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.founder-description {
+    max-width: 520px;
+    margin: 0;
+    color: #9aaba2;
+    font-size: 16px;
+    line-height: 1.85;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.founder-line {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .founder-grid {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    .founder-card {
+        padding: 40px 25px 50px;
+    }
+
+    .founder-card:first-child {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .founder-info h3 {
+        font-size: 38px;
+    }
+
+    .founder-description {
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: left;
+    }
+}
+
+/* =========================================================
+   COMMON ABOUT SECTION
+========================================================= */
+
+.about-section {
+
+    padding: 150px 6vw;
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 70px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.about-main {
+
+    max-width: 1100px;
+
+}
+
+
+.about-main h2 {
+
+    max-width: 900px;
+
+    font-size: clamp(50px, 7vw, 95px);
+
+    line-height: 0.88;
+
+    letter-spacing: -6px;
+
+}
+
+
+.about-main h2 span {
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--green);
+
+}
+
+
+/* =========================================================
+   ABOUT TEXT
+========================================================= */
+
+.about-columns {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    max-width: 900px;
+
+    margin-top: 60px;
+
+}
+
+
+.about-columns p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   WHY NOAHH
+========================================================= */
+
+.why-section {
+
+    padding: 150px 6vw;
+
+    background: var(--forest);
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.why-inner {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+
+.why-heading h2 {
+
+    max-width: 1100px;
+
+    font-size: clamp(60px, 8vw, 115px);
+
+    line-height: 0.85;
+
+    letter-spacing: -7px;
+
+}
+
+
+.why-heading h2 span {
+
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--green);
+
+}
+
+
+.why-content {
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 70px;
+
+    margin-top: 100px;
+
+}
+
+
+.why-number {
+
+    color: var(--green);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 11px;
+
+}
+
+
+.why-content > div:last-child {
+
+    max-width: 800px;
+
+}
+
+
+.why-content p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+
+}
+
+
+.why-content .large-text {
+
+    color: var(--white);
+
+    font-size: 27px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   CAPABILITIES
+========================================================= */
+
+.capability-list {
+
+    margin-top: 80px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.capability {
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 30px;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    transition: 0.3s;
+
+}
+
+
+.capability:hover {
+
+    padding-left: 15px;
+
+    background: rgba(13,42,30,0.2);
+
+}
+
+
+.capability > span {
+
+    color: var(--green);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 10px;
+
+}
+
+
+.capability h3 {
+
+    font-size: 27px;
+
+}
+
+
+.capability p {
+
+    max-width: 600px;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+    font-size: 13px;
+
+    margin-top: 10px;
+
+}
+
+
+/* =========================================================
+   WHY APPROACH US
+========================================================= */
+
+.approach-us {
+
+    padding: 160px 6vw;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(53,255,138,0.09),
+            transparent 40%
+        ),
+
+        #050706;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.approach-us-inner {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+
+.approach-heading h2 {
+
+    max-width: 1000px;
+
+    font-size: clamp(60px, 8vw, 120px);
+
+    line-height: 0.84;
+
+    letter-spacing: -7px;
+
+}
+
+
+.approach-heading h2 span {
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--green);
+
+}
+
+
+.approach-points {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 100px;
+
+    border-top: 1px solid var(--border);
+
+    border-left: 1px solid var(--border);
+
+}
+
+
+.approach-point {
+
+    min-height: 280px;
+
+    padding: 35px;
+
+    border-right: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    transition: 0.4s;
+
+}
+
+
+.approach-point:hover {
+
+    background: var(--forest);
+
+}
+
+
+.approach-point > span {
+
+    color: var(--green);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 10px;
+
+}
+
+
+.approach-point h3 {
+
+    margin-top: 60px;
+
+    font-size: 25px;
+
+}
+
+
+.approach-point p {
+
+    max-width: 400px;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+    font-size: 13px;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.about-closing {
+
+    min-height: 75vh;
+
+    padding: 150px 6vw;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.closing-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.25;
+
+    background-image:
+
+        linear-gradient(
+            rgba(53,255,138,0.08) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(53,255,138,0.08) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    mask-image:
+        radial-gradient(
+            circle at center,
+            black,
+            transparent 75%
+        );
+
+}
+
+
+.about-closing h2 {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: clamp(70px, 11vw, 150px);
+
+    line-height: 0.8;
+
+    letter-spacing: -9px;
+
+}
+
+
+.about-closing h2 span {
+
+    display: block;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px var(--green);
+
+}
+
+
+.about-closing > p:not(.section-kicker) {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 500px;
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+    margin-top: 45px;
+
+}
+
+
+.about-closing .contact-button {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-hero {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-hero-visual {
+
+        min-height: 500px;
+
+    }
+
+
+    .about-section,
+    .founders-section {
+
+        grid-template-columns: 100px 1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .why-content {
+
+        grid-template-columns: 100px 1fr;
+
+        gap: 35px;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .about-hero {
+
+        padding-left: 5vw;
+
+        padding-right: 5vw;
+
+    }
+
+
+    .about-hero h1 {
+
+        font-size: 62px;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .about-hero-visual {
+
+        min-height: 430px;
+
+    }
+
+
+    .hero-core {
+
+        width: 180px;
+
+        height: 180px;
+
+    }
+
+
+    .hero-core strong {
+
+        font-size: 65px;
+
+    }
+
+
+    .about-hero-visual .orbit-a {
+
+        width: 250px;
+
+        height: 250px;
+
+    }
+
+
+    .about-hero-visual .orbit-b {
+
+        width: 360px;
+
+        height: 360px;
+
+    }
+
+
+    .about-hero-visual .orbit-c {
+
+        width: 480px;
+
+        height: 480px;
+
+    }
+
+
+    .hero-data {
+
+        font-size: 7px;
+
+    }
+
+
+    .about-section,
+    .founders-section {
+
+        grid-template-columns: 1fr;
+
+        padding-left: 5vw;
+
+        padding-right: 5vw;
+
+    }
+
+
+    .about-index {
+
+        flex-direction: row;
+
+        align-items: center;
+
+    }
+
+
+    .about-index small {
+
+        writing-mode: initial;
+
+    }
+
+
+    .founder-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-columns {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .why-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .approach-points {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .capability {
+
+        grid-template-columns: 50px 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .about-closing {
+
+        padding-left: 5vw;
+
+        padding-right: 5vw;
+
+    }
+
+
+    .about-closing h2 {
+
+        font-size: 70px;
+
+        letter-spacing: -5px;
+
+    }
+
+}
