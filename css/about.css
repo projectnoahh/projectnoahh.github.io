@@ -1266,3 +1266,670 @@
     }
 
 }
+
+/* =========================================================
+   ABOUT PAGE — ALIGNMENT & TYPOGRAPHY REFINEMENT
+   Keep after the existing About styles.
+========================================================= */
+
+.founders-section,
+.about-section {
+    align-items: start;
+}
+
+.founders-content,
+.about-main,
+.why-inner,
+.approach-us-inner {
+    min-width: 0;
+}
+
+.founders-content h2,
+.about-main h2,
+.why-heading h2,
+.approach-heading h2,
+.about-closing h2 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+
+.founders-content h2 span,
+.about-main h2 span,
+.why-heading h2 span,
+.approach-heading h2 span,
+.about-closing h2 span {
+    display: block;
+}
+
+.founders-intro,
+.about-columns p,
+.why-content p,
+.capability p,
+.approach-point p,
+.about-closing > p:not(.section-kicker) {
+    text-align: left;
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+}
+
+.founder-grid {
+    align-items: stretch;
+    width: 100%;
+}
+
+.founder-card {
+    min-width: 0;
+    padding: 42px clamp(22px, 4vw, 56px) 48px;
+}
+
+.founder-card:first-child {
+    padding-left: 0;
+}
+
+.founder-card:last-child {
+    padding-right: 0;
+}
+
+.founder-role {
+    max-width: 100%;
+    letter-spacing: 0.08em;
+    overflow-wrap: anywhere;
+}
+
+.founder-description {
+    max-width: 58ch;
+    font-size: clamp(14px, 1.1vw, 16px);
+    line-height: 1.8;
+    text-align: left;
+    text-justify: auto;
+}
+
+.about-columns {
+    align-items: start;
+}
+
+.about-columns p {
+    max-width: 58ch;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.capability-list {
+    max-width: 100%;
+}
+
+.capability {
+    grid-template-columns: 24px minmax(0, 1fr);
+    align-items: start;
+    gap: 22px;
+}
+
+.capability > div {
+    min-width: 0;
+}
+
+.capability p {
+    max-width: 68ch;
+    font-size: 15px;
+    line-height: 1.85;
+    margin: 0;
+}
+
+.approach-point h3 {
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.approach-point p {
+    max-width: 48ch;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-closing {
+    align-items: flex-start;
+}
+
+.about-closing .contact-button {
+    align-self: flex-start;
+}
+
+@media (max-width: 1000px) {
+    .founders-section,
+    .about-section {
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 32px;
+        padding-top: clamp(82px, 11vw, 125px);
+        padding-bottom: clamp(82px, 11vw, 125px);
+    }
+
+    .founder-grid {
+        margin-top: 48px;
+    }
+
+    .founder-card {
+        padding: 32px 28px 38px;
+    }
+
+    .founder-card:first-child {
+        padding-left: 0;
+    }
+
+    .founder-card:last-child {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .founders-section,
+    .about-section {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        padding: 76px 5vw;
+    }
+
+    .about-index {
+        gap: 12px;
+    }
+
+    .founders-content h2,
+    .about-main h2 {
+        font-size: clamp(39px, 10vw, 62px);
+        line-height: 0.96;
+        letter-spacing: -0.045em;
+    }
+
+    .why-heading h2,
+    .approach-heading h2 {
+        font-size: clamp(42px, 10vw, 68px);
+        line-height: 0.95;
+        letter-spacing: -0.045em;
+    }
+
+    .founders-intro {
+        margin-top: 24px;
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .founder-grid {
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 34px;
+    }
+
+    .founder-card,
+    .founder-card:first-child,
+    .founder-card:last-child {
+        padding: 30px 0 34px;
+    }
+
+    .founder-card:first-child {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .founder-info h3 {
+        font-size: clamp(32px, 8vw, 42px);
+        line-height: 1.08;
+    }
+
+    .founder-role {
+        margin-bottom: 18px;
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .founder-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .about-columns {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        margin-top: 30px;
+    }
+
+    .about-columns p {
+        font-size: 14px;
+    }
+
+    .why-section,
+    .approach-us {
+        padding: 82px 5vw;
+    }
+
+    .why-content {
+        margin-top: 42px;
+    }
+
+    .why-content .large-text {
+        font-size: clamp(21px, 5.5vw, 27px);
+        line-height: 1.45;
+    }
+
+    .capability-list {
+        margin-top: 38px;
+    }
+
+    .capability {
+        grid-template-columns: 16px minmax(0, 1fr);
+        gap: 14px;
+        padding: 24px 0;
+    }
+
+    .capability p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .approach-points {
+        margin-top: 42px;
+    }
+
+    .approach-point {
+        min-height: auto;
+        padding: 26px 22px;
+    }
+
+    .approach-point h3 {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .approach-point p {
+        font-size: 14px;
+    }
+
+    .about-closing {
+        min-height: auto;
+        padding: 90px 5vw;
+    }
+
+    .about-closing h2 {
+        font-size: clamp(52px, 13vw, 78px);
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .founder-card,
+    .capability,
+    .approach-point,
+    .hero-core {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
+/* WHAT WE DO — paragraph alignment refinement */
+.about-section.capabilities .capability {
+    grid-template-columns: 24px minmax(0, 1fr);
+    align-items: start;
+    gap: 22px;
+}
+
+.about-section.capabilities .capability > div {
+    min-width: 0;
+    width: 100%;
+}
+
+.about-section.capabilities .capability p {
+    width: 100%;
+    max-width: 90ch;
+    margin: 0;
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+    line-height: 1.9;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 700px) {
+    .about-section.capabilities .capability {
+        grid-template-columns: 16px minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .about-section.capabilities .capability p {
+        max-width: 100%;
+        text-align: left;
+        text-align-last: auto;
+        line-height: 1.8;
+    }
+}
+
+
+/* =========================================================
+   ABOUT — FOUNDERS INTRO, MATCHING PROJECTS PAGE
+========================================================= */
+.founders-section {
+    display: block;
+    padding: clamp(110px, 12vw, 190px) 6vw 120px;
+}
+
+.founders-section > .about-index {
+    display: none;
+}
+
+.founders-content {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.founders-content > .section-kicker {
+    margin-bottom: 38px;
+}
+
+.founders-content h2 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: clamp(42px, 6.15vw, 118px);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.065em;
+    white-space: nowrap;
+    text-wrap: nowrap;
+}
+
+.founders-content h2 span {
+    display: inline;
+    color: transparent;
+    -webkit-text-stroke: 1.2px var(--green);
+}
+
+.founders-intro-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(190px, 0.42fr);
+    align-items: start;
+    gap: clamp(35px, 7vw, 120px);
+    margin-top: clamp(45px, 5.5vw, 88px);
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.founders-intro {
+    max-width: 720px;
+    margin: 0;
+    color: var(--gray);
+    font-size: clamp(15px, 1.15vw, 18px);
+    line-height: 1.85;
+    text-wrap: pretty;
+}
+
+.founders-focus {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.founders-focus li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--gray);
+    font-family: "DM Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 1.7px;
+    line-height: 1.6;
+}
+
+.founders-focus li::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+}
+
+.founder-grid {
+    max-width: none;
+    margin: clamp(65px, 8vw, 120px) auto 0;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.founder-card {
+    min-width: 0;
+    min-height: 320px;
+    padding: clamp(24px, 3vw, 42px);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.founder-card:first-child {
+    border-right: 1px solid var(--border);
+}
+
+.founder-info h3 {
+    font-size: clamp(28px, 2.5vw, 42px);
+}
+
+.founder-description {
+    max-width: 58ch;
+    line-height: 1.8;
+    text-wrap: pretty;
+}
+
+@media (max-width: 1100px) {
+    .founders-content h2 {
+        font-size: clamp(38px, 6vw, 72px);
+        letter-spacing: -0.055em;
+    }
+
+    .founders-intro-row {
+        grid-template-columns: minmax(0, 1fr) minmax(170px, 0.45fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .founders-section {
+        padding: 95px 5vw 80px;
+    }
+
+    .founders-content > .section-kicker {
+        margin-bottom: 25px;
+    }
+
+    .founders-content h2 {
+        white-space: normal;
+        text-wrap: balance;
+        font-size: clamp(38px, 10vw, 68px);
+        line-height: 0.96;
+        letter-spacing: -0.055em;
+    }
+
+    .founders-content h2 span {
+        display: inline;
+    }
+
+    .founders-intro-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        margin-top: 38px;
+        padding-top: 24px;
+    }
+
+    .founders-intro {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .founders-focus {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .founders-focus li {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .founder-grid {
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 55px;
+    }
+
+    .founder-card,
+    .founder-card:first-child {
+        min-height: auto;
+        padding: 28px 24px;
+        border-right: 1px solid var(--border);
+    }
+
+    .founder-info h3 {
+        font-size: clamp(30px, 8vw, 42px);
+    }
+}
+/* About page — first section fills the screen */
+.founders-section {
+    min-height: calc(100vh - 80px);
+    min-height: calc(100svh - 80px);
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+}
+/* First About section: heading and intro only */
+.founders-section {
+    min-height: calc(100vh - 80px);
+    min-height: calc(100svh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Founder cards begin in the next scroll section */
+.founder-profiles {
+    min-height: 100vh;
+    padding: 100px 6vw;
+    box-sizing: border-box;
+}
+
+.founder-profiles .founder-grid {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .founders-section {
+        min-height: calc(100svh - 70px);
+    }
+
+    .founder-profiles {
+        min-height: auto;
+        padding: 75px 5vw;
+    }
+}
+/* =========================================
+   ABOUT PAGE — FOUNDER PROFILES ALIGNMENT
+========================================= */
+
+.founder-profiles {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 6vw;
+    box-sizing: border-box;
+}
+
+.founder-profiles .founder-grid {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.founder-profiles .founder-card {
+    min-width: 0;
+    padding: clamp(24px, 3vw, 42px);
+    box-sizing: border-box;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Keep both founder profiles aligned */
+.founder-profiles .founder-card:first-child {
+    border-right: 1px solid var(--border);
+}
+
+.founder-profiles .founder-card:last-child {
+    border-right: 1px solid var(--border);
+}
+
+/* Tablet and mobile */
+@media (max-width: 760px) {
+    .founder-profiles {
+        min-height: auto;
+        padding: 75px 5vw;
+    }
+
+    .founder-profiles .founder-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .founder-profiles .founder-card,
+    .founder-profiles .founder-card:first-child,
+    .founder-profiles .founder-card:last-child {
+        padding: 28px 24px;
+        border-right: 1px solid var(--border);
+    }
+}
+
+/* Center the founders section */
+.founders-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+/* Keep the founder profiles centered */
+.founder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Remove card appearance */
+.founder-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px 0 !important;
+    text-align: center;
+}
+
+/* Center names and descriptions */
+.founder-card h2,
+.founder-card h3,
+.founder-card p {
+    text-align: justify;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .founders-section {
+        padding: 50px 20px;
+    }
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+}

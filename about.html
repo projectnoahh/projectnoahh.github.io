@@ -41,7 +41,7 @@
          NAVIGATION
     =========================================== -->
 
-    <header class="navbar">
+    <!-- <header class="navbar">
 
         <a href="index.html" class="nav-brand">
 
@@ -58,22 +58,11 @@
 
         <nav class="nav-links" id="site-nav">
 
-            <a href="index.html">Home</a>
-
-            <a href="about.html" class="active">
-                About
-            </a>
-
-            <a href="services.html">Services</a>
-
-            <a href="index.html#projects">
-                Projects
-            </a>
-
-            <a href="index.html#contact">
-                Contact
-            </a>
-
+           <a href="index.html">Home</a>
+<a href="about.html" class="active">About</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
         </nav>
 
 
@@ -103,9 +92,9 @@
 
         </button>
 
-    </header>
+    </header> -->
 
-
+<div id="navbar-placeholder"></div>
 
     <main>
 
@@ -114,105 +103,7 @@
              HERO
         =========================================== -->
 
-        <!-- <section class="about-hero">
-
-            <div class="about-hero-content">
-
-                <div class="status">
-
-                    <span class="status-dot"></span>
-
-                    PROJECT NOAHH / ABOUT
-
-                </div>
-
-
-                <p class="hero-kicker">
-                    THE PEOPLE BEHIND THE PROJECT
-                </p>
-
-
-                <h1>
-
-                    BUILT BY
-
-                    <span>
-                        PEOPLE.
-                    </span>
-
-                    DRIVEN BY
-
-                    <span>
-                        CURIOSITY.
-                    </span>
-
-                </h1>
-
-
-                <p class="about-hero-description">
-
-                    PROJECT Noahh began with two people,
-                    a shared interest in technology, and
-                    a desire to explore what exists
-                    beyond the obvious.
-
-                </p>
-
-            </div> -->
-
-
-            <!-- ======================================
-                 TECHNICAL HERO VISUAL
-            ======================================= -->
-<!-- 
-            <div class="about-hero-visual">
-
-                <div class="hero-orbit orbit-a"></div>
-
-                <div class="hero-orbit orbit-b"></div>
-
-                <div class="hero-orbit orbit-c"></div>
-
-
-                <div class="hero-core">
-
-                    <span>
-                        NOAHH / 001
-                    </span>
-
-                    <strong>
-                        02
-                    </strong>
-
-                    <small>
-                        MINDS / 01 DIRECTION
-                    </small>
-
-                </div>
-
-
-                <div class="hero-data data-one">
-                    HUMAN
-                </div>
-
-                <div class="hero-data data-two">
-                    TECHNOLOGY
-                </div>
-
-                <div class="hero-data data-three">
-                    SECURITY
-                </div>
-
-
-                <div class="hero-line line-one"></div>
-
-                <div class="hero-line line-two"></div>
-
-                <div class="hero-line line-three"></div>
-
-            </div>
-
-        </section> -->
+        <!-- Legacy hero section removed; founders section follows. -->
 
 
 
@@ -257,18 +148,32 @@
                 </h2>
 
 
-                <p class="founders-intro">
-                     PROJECT Noahh began with two people,
-                    a shared interest in technology, and
-                    a desire to explore what exists
-                    beyond the obvious.
+                <div class="founders-intro-row">
+                    <p class="founders-intro">
+                         PROJECT Noahh began with two people,
+                        a shared interest in technology, and
+                        a desire to explore what exists
+                        beyond the obvious.
 
-                    Meet the people behind the project.
+                        Meet the people behind the project.
+                    </p>
 
-                </p>
+                    <ul class="founders-focus" aria-label="Founder focus areas">
+                        <li>CO-FOUNDERS</li>
+                        <li>SOFTWARE DEVELOPMENT</li>
+                        <li>CYBERSECURITY</li>
+                        <li>RESEARCH &amp; LEARNING</li>
+                    </ul>
+                </div>
 
+              
 
-                <div class="founder-grid">
+            </div>
+
+        </section>
+
+        <section class="founders-section founders-grid-section">
+  <div class="founder-grid">
 
 
                     <!-- ==================================
@@ -299,21 +204,21 @@
                                 Ciya Lalu
                             </h3>
                             <p class="founder-role">
-                                CO-FOUNDER - Jr.Software Engineer
+                                CO-FOUNDER · CERTIFIED SOC ANALYST ·  JR. SOFTWARE ENGINEER
                             </p>
 
 
                            <p class="founder-description">
 
     Jr. Software Engineer passionate about software development,
-    cybersecurity, and building practical digital solutions. Work with
+    cybersecurity, and building practical digital solutions. I work with
     technologies including Python, Django, PHP, Flutter, and modern web
     technologies.
-
+    <br><br>
     Alongside development, I am building my expertise in security analysis,
     vulnerability assessment, penetration testing, and secure application
     development.
-
+    <br><br>
     As a co-founder of PROJECT Noahh, I focus on turning ideas into
     practical websites, applications, student projects, and security-focused
     solutions tailored to real-world requirements.
@@ -390,12 +295,7 @@
 
                 </div>
 
-            </div>
-
         </section>
-
-
-
         <!-- ==========================================
              02 — WHAT IS PROJECT NOAHH
         =========================================== -->
@@ -507,13 +407,13 @@
 
                     <div>
 
-                        <p class="large-text">
+                        <!-- <p class="large-text">
 
                             New technologies create new
                             possibilities — but they also
                             create new attack surfaces.
 
-                        </p>
+                        </p> -->
 
 
                         <p>
@@ -599,9 +499,7 @@
 
                     <div class="capability">
 
-                        <span>
-                            
-                        </span>
+                        <span aria-hidden="true">✳</span>
 
                         <div>
 
@@ -615,12 +513,6 @@
                         </div>
 
                     </div>
-
-
-
-
-                    </div>
-
 
                 </div>
 
@@ -860,7 +752,7 @@
 
 
     <script src="./js/main.js"></script>
-
+<script src="js/navbar.js"></script>
 </body>
 
 </html>

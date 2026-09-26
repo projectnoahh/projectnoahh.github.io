@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+    // CURSOR GLOW
     const cursorGlow = document.querySelector(".cursor-glow");
 
     if (cursorGlow) {
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
+    // MOBILE MENU
     const menuButton = document.querySelector(".mobile-menu");
     const navLinks = document.querySelector(".nav-links");
 
@@ -42,11 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         navLinks.querySelectorAll("a").forEach((link) => {
-            link.addEventListener("click", () => closeMobileMenu());
+            link.addEventListener("click", closeMobileMenu);
         });
 
         document.addEventListener("click", (event) => {
-            if (!navLinks.contains(event.target) && !menuButton.contains(event.target)) {
+            if (
+                !navLinks.contains(event.target) &&
+                !menuButton.contains(event.target)
+            ) {
                 closeMobileMenu();
             }
         });
@@ -58,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // SCROLL REVEAL
     const revealElements = document.querySelectorAll(
         ".service-card, .method-card, .project-card, .technology-card, .founder-card"
     );
@@ -81,9 +86,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         revealElements.forEach((element) => observer.observe(element));
     } else {
-        revealElements.forEach((element) => element.classList.add("revealed"));
+        revealElements.forEach((element) => {
+            element.classList.add("revealed");
+        });
     }
 
+    // SMOOTH SCROLL
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
         link.addEventListener("click", (event) => {
             const targetId = link.getAttribute("href");
@@ -95,8 +103,66 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!target) return;
 
             event.preventDefault();
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
             closeMobileMenu();
         });
     });
+
+    // CONTACT FORM
+    const contactForm = document.querySelector("#contact-form");
+    const formNote = document.querySelector("#form-note");
+    const contactEmail = "your-email@example.com";
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+
+            if (contactEmail === "your-email@example.com") {
+                if (formNote) {
+                    formNote.textContent =
+                        "Please configure the contact email address in js/main.js before using this form.";
+                }
+                return;
+            }
+
+            const formData = new FormData(contactForm);
+
+            const name = String(formData.get("name") || "").trim();
+            const email = String(formData.get("email") || "").trim();
+            const topic = String(
+                formData.get("topic") || "General inquiry"
+            ).trim();
+            const message = String(
+                formData.get("message") || ""
+            ).trim();
+
+            const subject = encodeURIComponent(
+                `PROJECT Noahh inquiry — ${topic}`
+            );
+
+            const body = encodeURIComponent(
+                `Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `Topic: ${topic}\n\n` +
+                `Message:\n${message}`
+            );
+
+            window.location.href =
+                `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+
+            if (formNote) {
+                formNote.textContent =
+                    "Your email app should open with the message prepared. Review it and send it from there.";
+            }
+        });
+    }
 });
